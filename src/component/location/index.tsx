@@ -13,19 +13,18 @@ import { LOCATION, LOCATION_ADDRESS } from "../../const"
 export const Location = () => {
   return (
     <>
-      {/* 지도 및 주소 섹션 */}
+      {/* 💡 하나의 큰 사각형 박스로 전체 요소를 감쌉니다 */}
       <LazyDiv className="card location">
+        
+        {/* [1구역] 지도 및 주소 섹션 */}
         <h2 className="english">Location</h2>
         <div className="addr">
           {LOCATION}
           <div className="detail">{LOCATION_ADDRESS}</div>
         </div>
         <Map />
-      </LazyDiv>
 
-      {/* 대중교통 및 자가용 안내 섹션 */}
-      <LazyDiv className="card location">
-        {/* 대중교통 안내 */}
+        {/* [2구역] 대중교통 안내 */}
         <div className="location-info">
           <div className="transportation-icon-wrapper">
             <BusIcon className="transportation-icon" />
@@ -33,25 +32,25 @@ export const Location = () => {
           <div className="heading">대중교통</div>
           <div />
           <div className="content">
-            <b>[지하철 이용 시]</b>
+            <b>[지하철]</b>
             <br />
             <span style={{ color: '#8500dd', fontWeight: 'bold' }}>5호선 광화문역 2번 출구</span>
             <br />
-            → 경복궁 방면으로 직진
+            &nbsp;&nbsp;→ 경복궁 방면으로 직진
             <br />
-            → 대한민국 역사박물관에서 우회전
+            &nbsp;&nbsp;→ 대한민국 역사박물관에서 우회전
             <br />
-            → 사거리 좌측 대각선 첫 번째 건물
+            &nbsp;&nbsp;→ 사거리 좌측 대각선 첫 번째 건물
             <br />
             <span style={{ color: '#ff6e00', fontWeight: 'bold' }}>3호선 경복궁역 6번 출구</span>
             <br />
-            → 광화문 삼거리 건넌 후
+            &nbsp;&nbsp;→ 광화문 삼거리 건넌 후
             <br />
-            → 광화문 열린시민마당 건너편
+            &nbsp;&nbsp;→ 광화문 열린시민마당 건너편
           </div>
           <div />
           <div className="content">
-            <b>[버스 이용 시]</b>
+            <b>[버스]</b>
             <br />
             <span style={{ color: '#0052a4', fontWeight: 'bold' }}>간선</span>: 103, 109, 150, 171, 272, 401, 406, 408, 606, 607, 700, 704, 706, 707, 708
             <br />
@@ -62,7 +61,7 @@ export const Location = () => {
           </div>
         </div>
 
-        {/* 자가용 안내 */}
+        {/* [3구역] 자가용 안내 */}
         <div className="location-info">
           <div className="transportation-icon-wrapper">
             <CarIcon className="transportation-icon" />
@@ -74,8 +73,7 @@ export const Location = () => {
             <br />
             <b>아펠가모 광화문</b> 검색
             <br />
-            {/*- 주차 요금은 무료입니다.*/}
-            (주차장 이용 시 웨딩홀과 바로 연결)
+            * 하객 주차 2시간 무료 (웨딩홀 내 정산기 이용)
           </div>
           <div />
           <div className="content">
@@ -85,6 +83,7 @@ export const Location = () => {
             </b>
           </div>
         </div>
+
       </LazyDiv>
     </>
   )

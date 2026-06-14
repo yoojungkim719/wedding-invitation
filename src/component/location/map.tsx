@@ -55,20 +55,45 @@ const NaverMap = () => {
     if (naver) {
       const map = new naver.maps.Map(ref.current, {
         center: new naver.maps.LatLng(
-          WEDDING_HALL_POSITION[1],
-          WEDDING_HALL_POSITION[0],
+          WEDDING_HALL_POSITION[1] - 0.0010,
+          WEDDING_HALL_POSITION[0] - 0.0015,
         ),
         zoom: 16,
       })
 
       // 마커 추가
-      new naver.maps.Marker({
+      const marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(
           WEDDING_HALL_POSITION[1],
           WEDDING_HALL_POSITION[0],
         ),
         map,
       })
+
+      // 지도 위에 띄울 글자 상자(말풍선) 디자인 설정
+      const infowindow = new naver.maps.InfoWindow({
+        content: `
+          <div style="
+            padding: 5px 10px; 
+            font-size: 13px; 
+            font-weight: bold; 
+            color: #352012; 
+            background: #cfcac7; 
+            border: 1px solid #352012; 
+            border-radius: 3px;
+            text-align: center;
+          ">
+            아펠가모 광화문
+          </div>
+        `,
+        borderWidth: 0,            /* 네이버 기본 말풍선 테두리 제거 */
+        disableAnchor: true,       /* 말풍선 꼬리표 제거하여 깔끔하게 처리 */
+        backgroundColor: "transparent",
+        pixelOffset: new naver.maps.Point(0, -10), /* 글자 상자 위치를 마커 살짝 위로 조절 */
+      })
+
+      // 지도가 켜지자마자 마커 위에 글자 상자를 자동으로 띄우기
+      infowindow.open(map, marker)
 
       return () => {
         map.destroy()

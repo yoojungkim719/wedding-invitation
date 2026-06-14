@@ -132,14 +132,11 @@ export const Information = () => {
   // 정적 모드일 경우 참석 의사 전달 기능을 제외합니다.
   if (STATIC_ONLY) {
     return (
-      <>
-        <LazyDiv className="card information">
-          <Information1 />
-        </LazyDiv>
-        <LazyDiv className="card information">
-          <Information2 />
-        </LazyDiv>
-      </>
+      /* 💡 각 섹션을 따로 감싸던 card 태그들을 제거하고 하나의 커다란 박스로 통합했습니다 */
+      <LazyDiv className="card information">
+        <Information1 />
+        <Information2 />
+      </LazyDiv>
     )
   }
 
