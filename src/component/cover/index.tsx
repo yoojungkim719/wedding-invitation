@@ -29,15 +29,15 @@ export const Cover = () => {
     <LazyDiv className="card cover">
       {/* 상단 날짜 표시 */}
       <div className="wedding-date">
-        {WEDDING_DATE.format("YYYY")}
+        <b>{WEDDING_DATE.format("YYYY")}</b>
         <div className="divider" />
-        {WEDDING_DATE.format("MM")}
+        <b>{WEDDING_DATE.format("MM")}</b>
         <div className="divider" />
-        {WEDDING_DATE.format("DD")}
+        <b>{WEDDING_DATE.format("DD")}</b>
       </div>
       {/* 요일 표시 (영어) */}
       <div className="wedding-day-of-week">
-        {DAY_OF_WEEK[WEDDING_DATE.day()]}
+        <b>{DAY_OF_WEEK[WEDDING_DATE.day()]}</b>
       </div>
       {/* 커버 이미지 */}
       <div className="image-wrapper">

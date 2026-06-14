@@ -74,24 +74,24 @@ const NaverMap = () => {
       const infowindow = new naver.maps.InfoWindow({
         content: `
           <div style="
-            padding: 0.3rem 0.6rem; 
-            font-size: 0.75rem; 
+            padding: 0.25rem 0.55rem; 
+            font-size: 0.7rem; 
             font-weight: bold; 
             color: #352012; 
             background: #dcd8d6; 
             border: 1px solid #352012; 
-            border-radius: 3px;
+            border-radius: 2px;
             text-align: center;
             white-space: nowrap;
             word-break: keep-all;
           ">
-            아펠가모 광화문
+            아펠가모 광화문💍
           </div>
         `,
         borderWidth: 0,            /* 네이버 기본 말풍선 테두리 제거 */
         disableAnchor: true,       /* 말풍선 꼬리표 제거하여 깔끔하게 처리 */
         backgroundColor: "transparent",
-        pixelOffset: new naver.maps.Point(0, 75),
+        pixelOffset: new naver.maps.Point(0, -7),
       })
 
       // 지도가 켜지자마자 마커 위에 글자 상자를 자동으로 띄우기

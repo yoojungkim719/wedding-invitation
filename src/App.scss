@@ -11,19 +11,19 @@
 @use "./component/shareButton";
 
 :root {
-  --theme-color: #857f7b;
-  --theme-bg-color: #f3f1ef;
-  --alt-color: #aba5a1;
-  --alt-bg-color: #e7e4e1;
-  --dark-color: #3e3a37;
-  --dark-grey-color: #cdc8c4;
-  --light-grey-color: #e3e0dd;
-  --light-color: #faf9f8;
+  --theme-color: #7c7571;
+  --theme-bg-color: #ddd7d2;
+  --alt-color: #9f9792;
+  --alt-bg-color: #e7e2de;
+  --dark-color: #3a3633;
+  --dark-grey-color: #c8c1bc;
+  --light-grey-color: #dfdad6;
+  --light-color: #f7f5f3;
   --white-color: #ffffff;
-  --red-color: #ad6c6c;
+  --red-color: #ac6d6d;
 
   /* 💡 1. 전체 기본 폰트를 변경합니다 */
-  font-family: "Noto Serif KR", serif !important;
+  font-family: "Gowun Batang", serif !important;
   font-size: 20px;
   @media (max-width: 500px) {
     font-size: 4vw;
@@ -76,7 +76,7 @@ $colors: (
 
 button {
   /* 💡 2. 버튼 내부의 폰트도 일치시킵니다 */
-  font-family: "Noto Serif KR", serif !important;
+  font-family: "Gowun Batang", serif !important;
   font-size: 1rem;
   border: none;
   background-color: transparent;
