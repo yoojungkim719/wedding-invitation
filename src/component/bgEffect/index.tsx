@@ -40,8 +40,8 @@ class Petal {
    * 꽃잎의 크기, 투명도, 속도 등을 무작위로 초기화합니다.
    */
   initialize() {
-    this.w = 25 + Math.random() * 15
-    this.h = 20 + Math.random() * 10
+    this.w = 40 + Math.random() * 5
+    this.h = 40 + Math.random() * 5
     this.opacity = this.w / 80
     this.flip = Math.random()
 

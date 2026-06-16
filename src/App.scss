@@ -11,16 +11,16 @@
 @use "./component/shareButton";
 
 :root {
-  --theme-color: #7c7571;
-  --theme-bg-color: #ddd7d2;
-  --alt-color: #9f9792;
-  --alt-bg-color: #e7e2de;
-  --dark-color: #3a3633;
-  --dark-grey-color: #c8c1bc;
-  --light-grey-color: #dfdad6;
-  --light-color: #f7f5f3;
+  --theme-color: #7d99b3;
+  --theme-bg-color: #3F4B6F;
+  --alt-color: #a0b7ca;
+  --alt-bg-color: #e5edf3;
+  --dark-color: #43515d;
+  --dark-grey-color: #c2ced7;
+  --light-grey-color: #dae3ea;
+  --light-color: #f6f9fb;
   --white-color: #ffffff;
-  --red-color: #ac6d6d;
+  --red-color: #b97373;
 
   /* 💡 1. 전체 기본 폰트를 변경합니다 */
   font-family: "Gowun Batang", serif !important;
