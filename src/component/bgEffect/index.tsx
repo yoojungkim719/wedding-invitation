@@ -72,8 +72,8 @@ class Petal {
       this.petalImg,
       this.x,
       this.y,
-      this.w * (0.6 + Math.abs(Math.cos(this.flip)) / 3),
-      this.h * (0.8 + Math.abs(Math.sin(this.flip)) / 5),
+      this.w, /* * (0.6 + Math.abs(Math.cos(this.flip)) / 3), */
+      this.h, /* * (0.8 + Math.abs(Math.sin(this.flip)) / 5), */
     )
   }
 
@@ -112,7 +112,7 @@ export const BGEffect = () => {
      * 화면 크기에 따른 적절한 꽃잎 개수를 계산합니다.
      */
     const getPetalNum = () => {
-      return Math.floor((window.innerWidth * window.innerHeight) / 30000)
+      return Math.floor((window.innerWidth * window.innerHeight) / 10000)
     }
 
     /**
