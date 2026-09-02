@@ -37,7 +37,7 @@ export const LOCATION = "아펠가모 광화문"
 /**
  * 예식 장소 상세 주소
  */
-export const LOCATION_ADDRESS = "서울특별시 종로구 종로1길 50 \n더케이트윈타워 A동 LL층"
+export const LOCATION_ADDRESS = "서울특별시 종로구 종로1길 50 \n더케이트윈타워 A동 LL층 (지하2층)"
 
 /**
  * 카카오톡 공유 시 사용할 위치 정보 주소
@@ -82,19 +82,19 @@ export const BRIDE_INFO = [
     relation: "신부",
     name: BRIDE_FULLNAME,
     phone: "010-6216-3978",
-    account: "신한은행 110385086570",
+    account: "신한은행 110-385-086570",
   },
   {
     relation: "신부 아버지",
     name: BRIDE_FATHER,
     phone: "010-5351-2029",
-    account: "하나은행 00000000000",
+    account: "국민은행 664602-01-360431",
   },
   {
     relation: "신부 어머니",
     name: BRIDE_MOTHER,
     phone: "010-4050-3978",
-    account: "하나은행 00000000000000",
+    account: "국민은행 664602-01-126219",
   },
 ]
 
@@ -113,18 +113,18 @@ export const GROOM_INFO = [
     relation: "신랑",
     name: GROOM_FULLNAME,
     phone: "010-9521-5896",
-    account: "신한은행 110409309678",
+    account: "신한은행 110-409-309678",
   },
   {
     relation: "신랑 아버지",
     name: GROOM_FATHER,
-    phone: "010-0000-0000",
+    phone: "010-5260-2766",
     account: "신한은행 000000000000",
   },
   {
     relation: "신랑 어머니",
     name: GROOM_MOTHER,
-    phone: "010-0000-0000",
+    phone: "010-7793-9102",
     account: "국민은행 000000000000",
   },
 ]
