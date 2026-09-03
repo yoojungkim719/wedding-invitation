@@ -40,8 +40,8 @@ class Petal {
    * 꽃잎의 크기, 투명도, 속도 등을 무작위로 초기화합니다.
    */
   initialize() {
-    this.w = 40 + Math.random() * 5
-    this.h = 40 + Math.random() * 5
+    this.w = 35 + Math.random() * 5
+    this.h = 35 + Math.random() * 5
     this.opacity = this.w / 80
     this.flip = Math.random()
 
@@ -112,7 +112,7 @@ export const BGEffect = () => {
      * 화면 크기에 따른 적절한 꽃잎 개수를 계산합니다.
      */
     const getPetalNum = () => {
-      return Math.floor((window.innerWidth * window.innerHeight) / 10000)
+      return Math.floor((window.innerWidth * window.innerHeight) / 5000)
     }
 
     /**
