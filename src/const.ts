@@ -70,7 +70,7 @@ export const KMAP_PLACE_ID = 20000428
 // 신부 정보 설정
 export const BRIDE_FULLNAME = "김유정"
 export const BRIDE_FIRSTNAME = "유정"
-export const BRIDE_TITLE = "장녀"
+export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "김용훈"
 export const BRIDE_MOTHER = "김용남"
 
@@ -101,7 +101,7 @@ export const BRIDE_INFO = [
 // 신랑 정보 설정
 export const GROOM_FULLNAME = "김태현"
 export const GROOM_FIRSTNAME = "태현"
-export const GROOM_TITLE = "장남"
+export const GROOM_TITLE = "아들"
 export const GROOM_FATHER = "김정동"
 export const GROOM_MOTHER = "김영미"
 
@@ -119,12 +119,12 @@ export const GROOM_INFO = [
     relation: "신랑 아버지",
     name: GROOM_FATHER,
     phone: "010-5260-2766",
-    account: "신한은행 000000000000",
+    account: "국민은행 010-24-0259-636",
   },
   {
     relation: "신랑 어머니",
     name: GROOM_MOTHER,
     phone: "010-7793-9102",
-    account: "국민은행 000000000000",
+    account: "신한은행 110-215-355665",
   },
 ]
